@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= medicine.name %></title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <h1><%= medicine.name %></h1>
+    <p>Price: $<%= medicine.price %></p>
+    <p>Discount Price: $<%= medicine.discountPrice %></p>
+    <p>Quantity: <%= medicine.quantity %></p>
+    <p>Manufacturer: <%= medicine.manufacturer %></p>
+    <% if (medicine.imageUrl) { %>
+    <img src="<%= medicine.imageUrl %>" alt="<%= medicine.name %>" />
+    <% } %>
+    <a href="/medicines/<%= medicine._id %>/edit">Edit</a>
+    <form action="/medicines/<%= medicine._id %>?_method=DELETE" method="POST">
+      <button type="submit">Delete</button>
+    </form>
+    <a href="/medicines">Back to Medicines List</a>
+  </body>
+</html>

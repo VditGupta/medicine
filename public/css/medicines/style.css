@@ -1,0 +1,153 @@
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  background-color: white;
+  padding: 2% 3%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 2% auto;
+  max-width: 90%;
+}
+
+.filters-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+  margin-bottom: 2%;
+}
+
+.filters-form .input-group,
+.filters-form .sort-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+}
+
+.filters-form label {
+  display: block;
+  margin-bottom: 0.5%;
+  font-size: 0.9em;
+}
+
+.filters-form input,
+.filters-form select {
+  display: block;
+  padding: 1%;
+  width: 100%;
+  max-width: 300px;
+}
+
+.sort-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+}
+
+.filters-form button {
+  padding: 1% 3%;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filters-form button:hover {
+  background-color: #45a049;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  padding: 2% 0;
+  margin: 2%;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 2%;
+  width: 40%;
+  /* max-width: 30%; */
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .card {
+    width: 70vw;
+  }
+}
+
+.card img {
+  max-width: 40%;
+  margin-right: 2%;
+  border-radius: 8px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-content p,
+.card-content h2 {
+  margin: 1% 0;
+}
+
+.card-content .card-content {
+  display: inline-block;
+  padding: 0.5% 2%;
+  margin-top: 1%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.new {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.create-link {
+  display: inline-block;
+  padding: 1% 3%;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.create-link:hover {
+  background-color: #0056b3;
+}
+.apply_filters {
+  align-self: center;
+  height: 5%;
+}
+.card form {
+  background-color: #ffffff;
+  width: 40%;
+  border-radius: 5%;
+  align-self: center;
+}
+#edit-button {
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  width: 40%;
+  border-radius: 5%;
+  align-self: center;
+}
+.card button {
+  background-color: red;
+}
